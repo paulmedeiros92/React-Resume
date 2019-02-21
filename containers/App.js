@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 class App extends Component {
     _onChange = (value) => {
         this.props.dispatch(setMessage(value))
-    }
+    };
     render () {
         const {message} = this.props.messageReducer;
         return (
@@ -18,6 +18,9 @@ class App extends Component {
                 />
                 <Link to="/about">
                     <button>Go to About</button>
+                </Link>
+                <Link to="/calculator">
+                    <button>Calculator</button>
                 </Link>
             </div>
         )
